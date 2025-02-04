@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Fare Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ride Fare Prediction</h1>
+
+        <!-- Display error message if any -->
+        {% if error %}
+            <div class="error">
+                <p>{{ error }}</p>
+            </div>
+        {% endif %}
+
+        <form action="/predict" method="POST">
+            <label for="start_location">Start Location:</label>
+            <input type="text" id="start_location" name="start_location" required>
+
+            <label for="end_location">End Location:</label>
+            <input type="text" id="end_location" name="end_location" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+                <option value="2">Other</option>
+            </select>
+
+            <label for="vehicle_type">Vehicle Type:</label>
+            <select id="vehicle_type" name="vehicle_type" required>
+                <option value="bike">Bike</option>
+                <option value="car">Car</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="30">
+
+            <button type="submit">Predict Fare</button>
+        </form>
+
+        <!-- Display the fare only if available -->
+        {% if fare is not none %}
+            <h2>Predicted Fare: ${{ fare }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
