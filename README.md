@@ -42,11 +42,11 @@ Root Mean Squared Error (RMSE): The square root of MSE, giving an idea of the ma
 R-squared: Measures how well the model fits the data. A value closer to 1 indicates a better fit.
 
 ### Sample Output
-![Model Evaluation](static/screenshots/Screenshot 2025-02-04 at 9.19.19 AM.png)
-![Model Evaluation](static/screenshots/Screenshot 2025-02-04 at 9.20.02 AM.png)
-![Model Evaluation](static/screenshots/Screenshot 2025-02-04 at 9.26.10 AM.png)
-![Model Evaluation](static/screenshots/Screenshot 2025-02-04 at 9.27.21 AM.png)
-![Model Evaluation](static/screenshots/Screenshot 2025-02-04 at 9.31.01 AM.png)
+![Model Evaluation](static/screenshots/1.png)
+![Model Evaluation](static/screenshots/2.png)
+![Model Evaluation](static/screenshots/3.png)
+![Model Evaluation](static/screenshots/4.png)
+![Model Evaluation](static/screenshots/5.png)
 
 
 
